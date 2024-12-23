@@ -8,7 +8,7 @@ ENV APP_HOME /usr/src/app
 RUN mkdir -p $APP_HOME
 
 # Copy the JAR file into the container
-COPY target/*.jar $APP_HOME/app.jar
+COPY target/twitter-app-0.0.3-SNAPSHOT.jar $APP_HOME/app.jar
 
 # Set the working directory
 WORKDIR $APP_HOME
